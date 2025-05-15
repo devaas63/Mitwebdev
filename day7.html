@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Image Hover Overlay</title>
+<style>
+body {
+margin: 0;
+padding: 0;
+display: flex;
+justify-content: center;
+align-items: center;
+height: 100vh;
+background: #82f078;
+font-family: Arial, sans-serif;
+background-image: url("Bodybuilder\ male\ figure\ icon\,\ GYM\ logo\ template\,\ athletic\ man\ sign\ white\ silhouette\ on\ black\ background_\ Vector\ illustration.jpg");
+}
+h1{
+    align-items: center;
+}
+.card {
+position: relative;
+width: 300px;
+height: 400px;
+overflow: hidden;
+border-radius:15px;
+box-shadow: 0.10px 30px rgba(0, 0, 0, 0.5);
+}
+.card img {
+width: 100%;
+height: 100%;
+object-fit: cover;
+display: block;
+transition: transform 0.5s ease;
+}
+.card:hover img {
+transform: scale(1.1);
+}
+.overlay {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background: rgba(0,0,0,0.6);
+color: white;
+opacity: 0;
+transition: opacity 0.5s ease;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+padding: 20px;
+text-align:center;
+}
+.card:hover .overlay {
+opacity: 1;
+}
+.overlay h3 
+{
+margin-bottom: 10px;
+transform:translater(20px);
+opacity:0;
+transition:all 0.6s ease;
+}
+.overlay button {
+padding: 10px 20px;
+background: white;
+color: black;
+border: none;
+border-radius: 20px;
+cursor: pointer;
+transform: translateY(20px);
+opacity: 0;
+transition: all 0.7s ease;
+}
+.card:hover .overlay h3,
+.card:hover .overlay p,
+.card:hover .overlay button {
+transform: translateY(0);
+opacity: 1;
+}
+</style>
+<title>First page</title>
+</head>
+<body>
+<div class="card">
+<img src="https://i.pinimg.com/736x/3f/c8/12/3fc81274aef4fce9c012ec53d8918d29.jpg" alt="Scenic View">
+<div class="overlay">
+<form>
+  <input type="text" name="name" placeholder="Enter ID"><br><br>
+  <input type="password" placeholder="Password" name="password"> 
+</form>
+<a href="day7-2.html">
+<button>Login</button></a>
+<br><br>
+<a href="day7reg.html">
+Register</a>
+</div>
+</div>
+</body>
+</html>
+
+
+
+
